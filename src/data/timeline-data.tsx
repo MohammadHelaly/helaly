@@ -1,16 +1,16 @@
 const timelineData = [
-  // {
-  // 	position: "A Position",
-  // 	place: "A Company",
-  // 	dates: "A Date - Present",
-  // 	description: [
-  // 		"Did a thing.",
-  // 		"Did another thing.",
-  // 		"Employed software development best practices, focusing on code quality and maintainability.",
-  // 		"Contributed to all stages of the development lifecycle for several projects, from design to deployment.",
-  // 		"Became heavily involved in code reviews, testing, CI/CD and other facets of software development.",
-  // 	],
-  // },
+  {
+    position: "Software Engineer",
+    place: "VAES.ai",
+    dates: "July 2024 - Present",
+    description: [
+      "Developed frontend-heavy, animation-rich marketing websites using React.js and Next.js.",
+      "Built and helped complete several robust, scalable backends and APIs.",
+      "Employed software development best practices, ensuring code quality, scalability and maintainability.",
+      "Contributed to all stages of the development lifecycle for several projects, from design to deployment.",
+      "Conducted and coordinated code reviews, testing, CI/CD and other facets of software development.",
+    ],
+  },
   {
     position: "B.E. in Computer and Communications Engineering",
     place: "Faculty of Engineering, Alexandria University",
