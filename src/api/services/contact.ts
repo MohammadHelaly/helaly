@@ -9,10 +9,8 @@ interface FormData {
 }
 
 const useSubmitContactForm = (
-  // eslint-disable-next-line
-  options?: MutationOptionsWithoutFn<any, any, FormData>,
-  // eslint-disable-next-line
-): UseMutationResult<any, any, FormData> => {
+  options?: MutationOptionsWithoutFn<unknown, unknown, FormData>,
+): UseMutationResult<unknown, unknown, FormData> => {
   return useMutation({
     mutationFn: async (formData: FormData) =>
       await api.post(import.meta.env.VITE_CONTACT_FORM_ENDPOINT, formData),
