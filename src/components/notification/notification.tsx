@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import * as Dialog from "@radix-ui/react-dialog";
-import CloseMenu from "@/assets/icons/close-menu-black.svg";
+import { CloseMenu } from "@/assets/icons";
 
 interface Props {
   open: boolean;
