@@ -36,13 +36,12 @@ const Carousel = (props: Props) => {
   const [current, setCurrent] = useState(0);
   const [direction, setDirection] = useState<"forward" | "backward">("forward");
   const [buttonsDisabled, setButtonsDisabled] = useState(false);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   const transition = {
     type: "tween",
     duration: transitionDuration / 1000,
   };
-
-  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   const debounceButtons = useCallback(() => {
     setButtonsDisabled(true);
@@ -98,7 +97,7 @@ const Carousel = (props: Props) => {
   }, [current, autoPlay, autoPlayInterval, nextSlide]);
 
   return (
-    <div className="relative aspect-[20/9] w-full">
+    <div aria-label="Image carousel" className="relative aspect-[20/9] w-full">
       <div className="relative mx-auto h-full w-full overflow-hidden">
         <AnimatePresence initial={false} custom={direction} mode="sync">
           <motion.div
@@ -121,6 +120,7 @@ const Carousel = (props: Props) => {
             <button
               disabled={buttonsDisabled}
               onClick={previousSlide}
+              aria-label="Previous slide"
               className="z-20 flex size-12 items-center justify-center rounded-full"
             >
               <ChevronRight className="rotate-180 fill-white" />
@@ -130,6 +130,7 @@ const Carousel = (props: Props) => {
             <button
               disabled={buttonsDisabled}
               onClick={nextSlide}
+              aria-label="Next slide"
               className="z-20 flex size-12 items-center justify-center rounded-full"
             >
               <ChevronRight className="fill-white" />
@@ -144,6 +145,8 @@ const Carousel = (props: Props) => {
               key={index}
               disabled={buttonsDisabled}
               onClick={() => goToSlide(index)}
+              aria-label={`Slide ${index + 1}`}
+              aria-current={index === current ? "true" : "false"}
               className={`z-20 box-content size-1 rounded-full ${
                 index === current
                   ? "border-2 border-white bg-transparent"
