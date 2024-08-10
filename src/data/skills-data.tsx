@@ -1,123 +1,125 @@
-import Cpp from "@/assets/icons/cpp-monocolor.svg";
-import Python from "@/assets/icons/python-monocolor.svg";
-import Java from "@/assets/icons/java-monocolor.svg";
-// import Bash from "@/assets/icons/bash-monocolor.svg";
-import Html from "@/assets/icons/html-monocolor.svg";
-import Css from "@/assets/icons/css-monocolor.svg";
-import Mysql from "@/assets/icons/mysql-monocolor.svg";
-import Mongodb from "@/assets/icons/mongodb-monocolor.svg";
-import Javascript from "@/assets/icons/javascript-monocolor.svg";
-import Php from "@/assets/icons/php-monocolor.svg";
-// import Git  from "@/assets/icons/git-monocolor.svg";
-import Reactjs from "@/assets/icons/reactjs-monocolor.svg";
-import Nextjs from "@/assets/icons/nextjs.svg";
-// import Redux  from "@/assets/icons/redux-monocolor.svg";
-import Nodejs from "@/assets/icons/nodejs-monocolor.svg";
-import Expressjs from "@/assets/icons/expressjs-monocolor.svg";
-import Docker from "@/assets/icons/docker-monocolor.svg";
-// import GraphQL  from "@/assets/icons/graphql.svg";
-import Aws from "@/assets/icons/aws-monocolor.svg";
-import Dataiku from "@/assets/icons/dataiku-monocolor.svg";
-import GoLang from "@/assets/icons/golang.svg";
-import SocketIo from "@/assets/icons/socketio.svg";
+import {
+  Aws,
+  // Bash,
+  Cpp,
+  Css,
+  Dataiku,
+  Docker,
+  ExpressJs,
+  // Git,
+  GoLang,
+  // GraphQL,
+  Html,
+  Java,
+  JavaScript,
+  MongoDb,
+  MySql,
+  NextJs,
+  NodeJs,
+  Php,
+  Python,
+  ReactJs,
+  // Redux,
+  SocketIo,
+} from "@/assets/icons";
 
 const skillsData = [
   {
     name: "C & C++",
-    icon: <Cpp height="100%" width="100%" className="scale-125" />,
+    icon: <Cpp className="h-full w-full scale-125" />,
     className: "cpp-icon",
   },
   {
     name: "Python",
-    icon: <Python height="100%" width="100%" />,
+    icon: <Python className="h-full w-full" />,
   },
   {
     name: "Java",
-    icon: <Java height="100%" width="100%" />,
+    icon: <Java className="h-full w-full" />,
   },
   // {
   // 	// name: "Linux Shell & Bash",
   // 	name: "Bash",
-  // 	icon: <Bash height="100%" width="100%" />,
+  // 	icon: <Bash className="h-full w-full" />,
   // },
   {
     name: "HTML",
-    icon: <Html height="100%" width="100%" />,
+    icon: <Html className="h-full w-full" />,
   },
   {
     name: "CSS",
-    icon: <Css height="100%" width="100%" />,
+    icon: <Css className="h-full w-full" />,
   },
   {
     name: "JavaScript",
-    icon: <Javascript height="100%" width="100%" />,
+    icon: <JavaScript className="h-full w-full" />,
   },
   {
     name: "PHP",
-    icon: <Php height="100%" width="100%" className="scale-125" />,
+    icon: <Php className="h-full w-full scale-125" />,
     className: "php-icon",
   },
   {
     name: "MySQL",
-    icon: <Mysql height="100%" width="100%" className="scale-125" />,
+    icon: <MySql className="h-full w-full scale-125" />,
     className: "mysql-icon",
   },
   {
     name: "MongoDB",
-    icon: <Mongodb height="100%" width="100%" />,
+    icon: <MongoDb className="h-full w-full" />,
   },
   {
     name: "Socket.io",
-    icon: <SocketIo height="100%" width="100%" />,
+    icon: <SocketIo className="h-full w-full" />,
   },
   {
     name: "AWS",
-    icon: <Aws height="100%" width="100%" />,
+    icon: <Aws className="h-full w-full" />,
   },
   // {
   // 	name: "Git",
-  // 	icon: <Git height="100%" width="100%" />,
+  // 	icon: <Git className="h-full w-full" />,
   // },
   {
     name: "GoLang",
-    icon: <GoLang height="100%" width="100%" />,
+    icon: <GoLang className="h-full w-full" />,
   },
   {
     name: "Docker",
-    icon: <Docker height="100%" width="100%" />,
+    icon: <Docker className="h-full w-full" />,
   },
   // {
   // 	name: "GraphQL",
-  // 	icon: <GraphQL height="100%" width="100%" />,
+  // 	icon: <GraphQL className="h-full w-full" />,
   // },
   {
     // name: "React.js & React Native",
     name: "React.js",
-    icon: <Reactjs height="100%" width="100%" />,
+    icon: <ReactJs className="h-full w-full" />,
   },
   // {
   // 	// name: "Redux & Redux Toolkit",
   // 	name: "Redux",
-  // 	icon: <Redux height="100%" width="100%" />,
+  // 	icon: <Redux className="h-full w-full" />,
   // },
   {
     name: "Next.js",
-    icon: <Nextjs height="100%" width="100%" className="scale-[1.35]" />,
+    icon: <NextJs className="h-full w-full scale-[1.35]" />,
     className: "nextjs-icon",
   },
   {
     name: "Node.js",
-    icon: <Nodejs height="100%" width="100%" />,
+    icon: <NodeJs className="h-full w-full" />,
   },
   {
     name: "Express.js",
-    icon: <Expressjs height="100%" width="100%" />,
+    icon: <ExpressJs className="h-full w-full" />,
     className: "expressjs-icon",
   },
   {
     // name: "Dataiku DSS",
     name: "Dataiku",
-    icon: <Dataiku height="100%" width="100%" className="scale-[1.4]" />,
+    icon: <Dataiku className="h-full w-full scale-[1.4]" />,
     className: "dataiku-icon",
   },
 ];

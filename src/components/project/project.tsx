@@ -2,7 +2,7 @@ import { useState, useCallback } from "react";
 import { motion } from "framer-motion";
 import Carousel from "@/components/carousel";
 import Icon from "@/components/icon";
-import GitHub from "@/assets/icons/github.svg";
+import { GitHub } from "@/assets/icons";
 
 interface Props {
   title: string;

@@ -1,4 +1,4 @@
-import { HackerRank, Github, Gmail, Linkedin } from "@/assets/icons";
+import { HackerRank, GitHub, Gmail, LinkedIn } from "@/assets/icons";
 import Icon from "@/components/icon";
 
 interface Props {
@@ -20,10 +20,10 @@ const SocialLinks = (props: Props) => {
         />
       </Icon>
       <Icon link="https://github.com/MohammadHelaly">
-        <Github className={`size-8 rounded-sm fill-${fillColor}`} />
+        <GitHub className={`size-8 rounded-sm fill-${fillColor}`} />
       </Icon>
       <Icon link="https://www.linkedin.com/in/mohammadhelaly/">
-        <Linkedin className={`size-8 rounded-sm fill-${fillColor}`} />
+        <LinkedIn className={`size-8 rounded-sm fill-${fillColor}`} />
       </Icon>
       <Icon link="https://www.hackerrank.com/mohammad_helaly?hr_r=1">
         <HackerRank className={`size-8 rounded-sm fill-${fillColor}`} />
