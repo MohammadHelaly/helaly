@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, useScroll } from "framer-motion";
 import Container from "@/components/container";
+import NavLinks from "@/components/nav-links";
 import NavDrawer from "@/components/nav-drawer";
 import { HamburgerMenu } from "@/assets/icons";
 
@@ -45,8 +46,6 @@ const viewport = {
   amount: "some" as const,
 };
 
-const links = ["About", "Projects", "Skills", "Contact"];
-
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [animateNavBar, setAnimateNavBar] = useState("initial");
@@ -61,23 +60,6 @@ const NavBar = () => {
 
   const openDrawer = () => {
     setIsOpen(true);
-  };
-
-  const renderLinks = () => {
-    return links.map((link) => {
-      const href = "#" + link.toLowerCase();
-
-      return (
-        <li key={link}>
-          <a
-            href={href}
-            className="flex h-full items-center px-4 py-1 font-manrope text-base font-normal text-black transition-all duration-200 ease-in-out hover:bg-black hover:text-white"
-          >
-            {link}
-          </a>
-        </li>
-      );
-    });
   };
 
   return (
@@ -111,7 +93,9 @@ const NavBar = () => {
               transition={transition}
               className="hidden lg:flex"
             >
-              <ul className="flex">{renderLinks()}</ul>
+              <ul className="flex">
+                <NavLinks />
+              </ul>
             </motion.nav>
             <motion.button
               variants={navChildVariants}

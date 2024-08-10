@@ -1,13 +1,12 @@
 import { motion, AnimatePresence } from "framer-motion";
 import * as Dialog from "@radix-ui/react-dialog";
+import NavLinks from "@/components/nav-links";
 import { CloseMenu } from "@/assets/icons";
 
 interface Props {
   open: boolean;
   onOpenChange: (open: boolean) => void;
 }
-
-const links = ["About", "Projects", "Skills", "Contact"];
 
 const drawerVariants = {
   hidden: {
@@ -30,23 +29,6 @@ const transition = {
 
 const NavDrawer = (props: Props) => {
   const { open, onOpenChange } = props;
-
-  const renderLinks = () => {
-    return links.map((link) => {
-      const href = "#" + link.toLowerCase();
-
-      return (
-        <li key={link}>
-          <a
-            href={href}
-            className="flex h-full items-center px-4 py-1 font-manrope text-base font-normal text-black transition-all duration-200 ease-in-out hover:bg-black hover:text-white"
-          >
-            {link}
-          </a>
-        </li>
-      );
-    });
-  };
 
   return (
     <Dialog.Root open={open} onOpenChange={onOpenChange}>
@@ -90,7 +72,9 @@ const NavDrawer = (props: Props) => {
                   </Dialog.Close>
                 </div>
                 <nav className="px-3 py-24">
-                  <ul>{renderLinks()}</ul>
+                  <ul>
+                    <NavLinks />
+                  </ul>
                 </nav>
               </motion.div>
             </Dialog.Content>
