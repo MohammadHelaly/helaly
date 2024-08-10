@@ -32,8 +32,8 @@ const Notification = (props: Props) => {
       textClasses += " text-black";
       break;
     case "error":
-      contentClasses += " border-[#e94545]";
-      textClasses += " text-[#e94545]";
+      contentClasses += " border-red";
+      textClasses += " text-red";
       break;
   }
 

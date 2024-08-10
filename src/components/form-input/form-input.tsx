@@ -63,9 +63,9 @@ const FormInput = React.forwardRef<
     "w-full pt-5 pb-3 rounded-none border-t-none border-x-none border-b-2 border-black focus:outline-none focus:ring-0 !bg-white font-manrope text-sm text-black placeholder:font-manrope placeholder:text-sm placeholder:text-muted";
 
   if (error) {
-    labelClasses += " !text-[#e94545]";
-    textAreaClasses += " !border-[#e94545]";
-    inputClasses += " !border-[#e94545]";
+    labelClasses += " !text-red";
+    textAreaClasses += " !border-red";
+    inputClasses += " !border-red";
   } else {
     labelClasses += " text-muted";
   }
