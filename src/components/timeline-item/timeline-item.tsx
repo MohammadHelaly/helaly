@@ -69,9 +69,9 @@ const TimelineItem = (props: Props) => {
         whileInView="animate"
         className="mb-12 flex-grow border-t-2 border-black bg-white p-6 md:px-12"
       >
-        <h2 className="font-manrope text-[calc(1.325rem_+_0.9vw)] font-bold leading-[1.2] text-black xl:text-[2rem]">
+        <h3 className="font-manrope text-[calc(1.325rem_+_0.9vw)] font-bold leading-[1.2] text-black xl:text-[2rem]">
           {position}
-        </h2>
+        </h3>
         <ul className="flex flex-col gap-1 py-4">
           <li className="font-manrope text-base font-normal !italic text-black">
             {place}

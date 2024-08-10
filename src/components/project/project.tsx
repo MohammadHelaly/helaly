@@ -114,7 +114,7 @@ const Project = (props: Props) => {
               transition={overlayTransition}
               className="flex items-center gap-2"
             >
-              <h6 className="text-center font-manrope text-[calc(1.375rem_+_1.5vw)] font-bold leading-[1.2] text-white xl:text-[2.5rem]">
+              <h3 className="text-center font-manrope text-[calc(1.375rem_+_1.5vw)] font-bold leading-[1.2] text-white xl:text-[2.5rem]">
                 {siteLink ? (
                   <a
                     href={siteLink}
@@ -128,7 +128,7 @@ const Project = (props: Props) => {
                   title
                 )}{" "}
                 |
-              </h6>
+              </h3>
               <Icon link={githubLink}>
                 <GitHub className="size-8 fill-white" />
               </Icon>
@@ -172,7 +172,7 @@ const Project = (props: Props) => {
           transition={overlayTransition}
           className="flex items-center gap-2"
         >
-          <h6 className="text-center font-manrope text-[calc(1.375rem_+_1.5vw)] font-bold leading-[1.2] text-black xl:text-[2.5rem]">
+          <h3 className="text-center font-manrope text-[calc(1.375rem_+_1.5vw)] font-bold leading-[1.2] text-black xl:text-[2.5rem]">
             {siteLink ? (
               <a
                 href={siteLink}
@@ -186,7 +186,7 @@ const Project = (props: Props) => {
               title
             )}{" "}
             |
-          </h6>
+          </h3>
           <Icon link={githubLink}>
             <GitHub className="size-6 fill-black" />
           </Icon>

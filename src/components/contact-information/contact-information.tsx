@@ -26,7 +26,7 @@ const viewport = {
 const ContactInformation = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-8 px-6 py-6 lg:items-start lg:px-20 lg:py-6 xl:px-24">
-      <motion.h5
+      <motion.h3
         variants={variants}
         transition={transition}
         viewport={viewport}
@@ -35,7 +35,7 @@ const ContactInformation = () => {
         className="font-manrope text-[calc(1.375rem_+_1.5vw)] font-bold leading-[1.2] text-black xl:text-[2.5rem]"
       >
         Contact me
-      </motion.h5>
+      </motion.h3>
       <motion.p
         variants={variants}
         transition={transition}

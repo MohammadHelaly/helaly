@@ -57,13 +57,13 @@ const SectionHeader = (props: Props) => {
       whileInView="animate"
       className="flex flex-col items-center justify-center gap-2"
     >
-      <motion.h5
+      <motion.h2
         variants={childVariants}
         transition={transition}
         className={titleClasses}
       >
         {titleText}
-      </motion.h5>
+      </motion.h2>
       <motion.p
         variants={childVariants}
         transition={transition}
