@@ -54,7 +54,7 @@ const FormInput = React.forwardRef<
   HTMLInputElement | HTMLTextAreaElement,
   Props
 >((props, ref) => {
-  const { variant, label, error, ...rest } = props;
+  const { variant, label, error, id, ...rest } = props;
 
   let labelClasses = "absolute top-0 text-sm font-manrope";
   let textAreaClasses =
@@ -79,25 +79,21 @@ const FormInput = React.forwardRef<
       whileInView="animate"
       className="relative w-full"
     >
-      <label
-        id={"label-" + label}
-        htmlFor={"form-input-" + label}
-        className={labelClasses}
-      >
+      <label id={"label-" + id} htmlFor={id} className={labelClasses}>
         {label}
       </label>
       {variant === "text-area" ? (
         <textarea
-          id={"form-input-" + label}
-          aria-labelledby={"label-" + label}
+          id={id}
+          aria-labelledby={"label-" + id}
           className={textAreaClasses}
           ref={ref as React.Ref<HTMLTextAreaElement>}
           {...(rest as TextareaProps)}
         ></textarea>
       ) : (
         <input
-          id={"form-input-" + label}
-          aria-labelledby={"label-" + label}
+          id={id}
+          aria-labelledby={"label-" + id}
           className={inputClasses}
           ref={ref as React.Ref<HTMLInputElement>}
           {...(rest as InputProps)}
