@@ -79,18 +79,28 @@ const FormInput = React.forwardRef<
       whileInView="animate"
       className="relative w-full"
     >
-      <p className={labelClasses}>{label}</p>
+      <label
+        id={"label-" + label}
+        htmlFor={"form-input-" + label}
+        className={labelClasses}
+      >
+        {label}
+      </label>
       {variant === "text-area" ? (
         <textarea
+          id={"form-input-" + label}
+          aria-labelledby={"label-" + label}
           className={textAreaClasses}
-          {...(rest as TextareaProps)}
           ref={ref as React.Ref<HTMLTextAreaElement>}
+          {...(rest as TextareaProps)}
         ></textarea>
       ) : (
         <input
+          id={"form-input-" + label}
+          aria-labelledby={"label-" + label}
           className={inputClasses}
-          {...(rest as InputProps)}
           ref={ref as React.Ref<HTMLInputElement>}
+          {...(rest as InputProps)}
         />
       )}
       <AnimatePresence>
