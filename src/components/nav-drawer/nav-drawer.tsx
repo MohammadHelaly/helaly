@@ -42,7 +42,7 @@ const NavDrawer = (props: Props) => {
                 initial="hidden"
                 animate="visible"
                 exit="hidden"
-                className="fixed inset-0 z-50 bg-black"
+                className="fixed inset-0 z-50 bg-black lg:hidden"
               />
             </Dialog.Overlay>
             <Dialog.Content asChild forceMount>
@@ -52,7 +52,7 @@ const NavDrawer = (props: Props) => {
                 exit="hidden"
                 variants={drawerVariants}
                 transition={transition}
-                className="fixed right-0 top-0 z-50 h-full w-80 bg-white"
+                className="fixed right-0 top-0 z-50 h-full w-80 bg-white lg:hidden"
               >
                 <div className="flex w-full items-center justify-between px-3 py-3">
                   <a
