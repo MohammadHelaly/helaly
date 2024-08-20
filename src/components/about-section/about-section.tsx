@@ -79,7 +79,7 @@ const AboutSection = () => {
                 transition={transition}
                 className="text-center font-manrope text-base text-muted lg:text-start"
               >
-                I hold a B.E. in Computer and Communications Engineering from
+                I hold a B.Sc. in Computer and Communications Engineering from
                 Alexandria University.
               </motion.p>
               <motion.p

@@ -12,7 +12,7 @@ const timelineData = [
     ],
   },
   {
-    position: "B.E. in Computer and Communications Engineering",
+    position: "B.Sc. in Computer and Communications Engineering",
     place: "Faculty of Engineering, Alexandria University",
     dates: "September 2019 - July 2024",
     description: ["Graduated with a 3.4 GPA."],
