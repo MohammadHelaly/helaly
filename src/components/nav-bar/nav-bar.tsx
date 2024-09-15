@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { motion, useScroll } from "framer-motion";
 import Container from "@/components/container";
+import NavLogo from "@/components/nav-logo";
 import NavLinks from "@/components/nav-links";
 import NavDrawer from "@/components/nav-drawer";
 import { HamburgerMenu } from "@/assets/icons";
-import { scrollTo } from "@/lib/utils";
 
 const navVariants = {
   initial: {
@@ -63,10 +63,6 @@ const NavBar = () => {
     setIsOpen(true);
   };
 
-  const handleClick = () => {
-    scrollTo("home");
-  };
-
   return (
     <header className="fixed top-0 z-50 w-full bg-white py-3">
       <motion.div
@@ -85,13 +81,8 @@ const NavBar = () => {
             whileInView="animate"
             className="flex w-full items-center justify-between gap-2"
           >
-            <motion.span
-              onClick={handleClick}
-              variants={navChildVariants}
-              transition={transition}
-              className="cursor-pointer font-manrope text-xl font-bold text-black"
-            >
-              helaly.dev
+            <motion.span variants={navChildVariants} transition={transition}>
+              <NavLogo />
             </motion.span>
             <motion.nav
               variants={navChildVariants}

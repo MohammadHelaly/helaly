@@ -1,8 +1,8 @@
 import { motion, AnimatePresence } from "framer-motion";
 import * as Dialog from "@radix-ui/react-dialog";
+import NavLogo from "@/components/nav-logo";
 import NavLinks from "@/components/nav-links";
 import { CloseMenu } from "@/assets/icons";
-import { scrollTo } from "@/lib/utils";
 
 interface Props {
   open: boolean;
@@ -31,10 +31,6 @@ const transition = {
 const NavDrawer = (props: Props) => {
   const { open, onOpenChange } = props;
 
-  const handleClick = () => {
-    scrollTo("home");
-  };
-
   return (
     <Dialog.Root open={open} onOpenChange={onOpenChange}>
       <AnimatePresence>
@@ -60,12 +56,7 @@ const NavDrawer = (props: Props) => {
                 className="fixed right-0 top-0 z-50 h-full w-80 bg-white lg:hidden"
               >
                 <div className="flex w-full items-center justify-between px-3 py-3">
-                  <span
-                    className="cursor-pointer font-manrope text-xl font-bold text-black"
-                    onClick={handleClick}
-                  >
-                    helaly.dev
-                  </span>
+                  <NavLogo />
                   <Dialog.Close asChild>
                     <motion.button
                       className="size-8 items-center justify-center border-none bg-transparent p-0 focus:outline-none"
