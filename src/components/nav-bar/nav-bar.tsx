@@ -38,8 +38,9 @@ const navChildVariants = {
 
 const transition = {
   type: "tween",
-  duration: 0.2,
-  staggerChildren: 0.1,
+  duration: 0.4,
+  delayChildren: 0.2,
+  staggerChildren: 0.2,
 };
 
 const viewport = {
@@ -84,25 +85,19 @@ const NavBar = () => {
             <motion.span variants={navChildVariants} transition={transition}>
               <NavLogo />
             </motion.span>
-            <motion.nav
-              variants={navChildVariants}
-              transition={transition}
-              className="hidden lg:flex"
-            >
-              <ul className="flex">
+            <motion.nav variants={navChildVariants} transition={transition}>
+              <ul className="hidden lg:flex">
                 <NavLinks />
               </ul>
+              <button
+                className="flex size-8 items-center justify-center border-none bg-transparent p-0 focus:outline-none lg:hidden"
+                type="button"
+                aria-label="Toggle navigation"
+                onClick={openDrawer}
+              >
+                <HamburgerMenu className="h-full w-full fill-black" />
+              </button>
             </motion.nav>
-            <motion.button
-              variants={navChildVariants}
-              transition={transition}
-              className="flex size-8 items-center justify-center border-none bg-transparent p-0 focus:outline-none lg:hidden"
-              type="button"
-              aria-label="Toggle navigation"
-              onClick={openDrawer}
-            >
-              <HamburgerMenu className="h-full w-full fill-black" />
-            </motion.button>
           </motion.div>
         </Container>
         <NavDrawer open={isOpen} onOpenChange={setIsOpen} />

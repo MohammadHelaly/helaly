@@ -27,6 +27,7 @@ const childVariants = {
 const transition = {
   type: "tween",
   duration: 0.4,
+  delayChildren: 0.2,
   staggerChildren: 0.2,
 };
 
