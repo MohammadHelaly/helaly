@@ -28,9 +28,10 @@ import NodeJs from "./nodejs-monocolor.svg";
 import ExpressJs from "./expressjs-monocolor.svg";
 import SocketIo from "./socketio.svg";
 import Redux from "./redux-monocolor.svg";
-import GoLang from "./golang.svg";
+import GoLang from "./golang-monocolor.svg";
 import Git from "./git-monocolor.svg";
-import GraphQL from "./graphql.svg";
+import GraphQL from "./graphql-monocolor.svg";
+import Sst from "./sst-monocolor.svg";
 import HamburgerMenu from "./hamburger-menu-black.svg";
 import CloseMenu from "./close-menu-black.svg";
 import ChevronRight from "./chevron-right.svg";
@@ -69,6 +70,7 @@ export {
   Dataiku,
   Docker,
   NextJs,
+  Sst,
   HamburgerMenu,
   CloseMenu,
   ChevronRight,

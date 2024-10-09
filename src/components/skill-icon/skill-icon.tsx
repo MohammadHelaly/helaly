@@ -11,7 +11,9 @@ const SkillIcon = (props: Props) => {
       <div className="flex size-10 flex-col items-center justify-center lg:h-16 lg:w-20">
         {children}
       </div>
-      <p className="font-manrope font-bold text-black">{name}</p>
+      <p className="text-nowrap text-center font-manrope font-bold text-black">
+        {name}
+      </p>
     </div>
   );
 };
