@@ -4,18 +4,7 @@ import SectionHeader from "@/components/section-header";
 import SkillIcon from "@/components/skill-icon";
 import { skillsData } from "@/data";
 
-const parentVariants = {
-  initial: {
-    opacity: 0,
-    x: -40,
-  },
-  animate: {
-    opacity: 1,
-    x: 0,
-  },
-};
-
-const childVariants = {
+const variants = {
   initial: {
     opacity: 0,
     x: -40,
@@ -47,7 +36,7 @@ const SkillsSection = () => {
             subtitleText="Software development. Data science and machine learning."
           />
           <motion.div
-            variants={parentVariants}
+            variants={variants}
             transition={transition}
             viewport={viewport}
             initial="initial"
@@ -58,7 +47,7 @@ const SkillsSection = () => {
               return (
                 <motion.div
                   key={skill.name}
-                  variants={childVariants}
+                  variants={variants}
                   transition={transition}
                 >
                   <SkillIcon name={skill.name}>{skill.icon}</SkillIcon>

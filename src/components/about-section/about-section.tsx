@@ -13,18 +13,7 @@ const imageVariants = {
   },
 };
 
-const textParentVariants = {
-  initial: {
-    opacity: 0,
-    clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)",
-  },
-  animate: {
-    opacity: 1,
-    clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-  },
-};
-
-const textChildVariants = {
+const textVariants = {
   initial: {
     opacity: 0,
     clipPath: "polygon(0 0, 0 0, 0 100%, 0 100%)",
@@ -67,7 +56,7 @@ const AboutSection = () => {
               className="m-auto w-64 rounded-full"
             />
             <motion.div
-              variants={textParentVariants}
+              variants={textVariants}
               transition={transition}
               viewport={viewport}
               initial="initial"
@@ -75,7 +64,7 @@ const AboutSection = () => {
               className="flex flex-col justify-center gap-5 px-6"
             >
               <motion.p
-                variants={textChildVariants}
+                variants={textVariants}
                 transition={transition}
                 className="text-center font-manrope text-base text-muted lg:text-start"
               >
@@ -83,7 +72,7 @@ const AboutSection = () => {
                 Alexandria University.
               </motion.p>
               <motion.p
-                variants={textChildVariants}
+                variants={textVariants}
                 transition={transition}
                 className="text-center font-manrope text-base text-muted lg:text-start"
               >
@@ -91,7 +80,7 @@ const AboutSection = () => {
                 in data science and machine learning.
               </motion.p>
               <motion.p
-                variants={textChildVariants}
+                variants={textVariants}
                 transition={transition}
                 className="text-center font-manrope text-base text-muted lg:text-start"
               >
@@ -99,7 +88,7 @@ const AboutSection = () => {
                 with industry peers.
               </motion.p>
               <motion.p
-                variants={textChildVariants}
+                variants={textVariants}
                 transition={transition}
                 className="text-center font-manrope text-base text-muted lg:text-start"
               >

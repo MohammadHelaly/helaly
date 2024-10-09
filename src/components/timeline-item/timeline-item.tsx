@@ -18,16 +18,7 @@ const itemVariants = {
   },
 };
 
-const contentParentVariants = {
-  initial: {
-    clipPath: "polygon(-20% 0, 0 0, 0 100%, 0 100%)",
-  },
-  animate: {
-    clipPath: "polygon(-20% 0, 100% 0, 100% 100%, 0 100%)",
-  },
-};
-
-const contentChildVariants = {
+const contentVariants = {
   initial: {
     clipPath: "polygon(-20% 0, 0 0, 0 100%, 0 100%)",
   },
@@ -82,17 +73,17 @@ const TimelineItem = (props: Props) => {
         </ul>
         <hr />
         <motion.ul
-          variants={contentParentVariants}
+          variants={contentVariants}
           transition={contentTransition}
           viewport={viewport}
           initial="initial"
           whileInView="animate"
           className="flex list-disc flex-col gap-1 py-4 ps-8"
         >
-          {description.map((point, index) => (
+          {description.map((point) => (
             <motion.li
-              key={index}
-              variants={contentChildVariants}
+              key={point}
+              variants={contentVariants}
               transition={contentTransition}
               className="font-manrope text-base font-normal text-muted"
             >

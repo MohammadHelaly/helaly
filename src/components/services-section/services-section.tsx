@@ -3,18 +3,7 @@ import Container from "@/components/container";
 import ServiceCard from "@/components/service-card";
 import { servicesData } from "@/data";
 
-const parentVariants = {
-  initial: {
-    opacity: 0,
-    y: 80,
-  },
-  animate: {
-    opacity: 1,
-    y: 0,
-  },
-};
-
-const childVariants = {
+const variants = {
   initial: {
     opacity: 0,
     y: 80,
@@ -41,7 +30,7 @@ const ServicesSection = () => {
     <section id="services" className="bg-white py-12">
       <Container>
         <motion.div
-          variants={parentVariants}
+          variants={variants}
           transition={transition}
           viewport={viewport}
           initial="initial"
@@ -51,7 +40,7 @@ const ServicesSection = () => {
           {servicesData.map((service) => (
             <motion.div
               key={service.serviceTitle}
-              variants={childVariants}
+              variants={variants}
               transition={transition}
               className="h-full w-full"
             >

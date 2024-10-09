@@ -2,16 +2,7 @@ import { motion } from "framer-motion";
 import Container from "@/components/container";
 import SocialLinks from "@/components/social-links";
 
-const parentVariants = {
-  initial: {
-    opacity: 0,
-  },
-  animate: {
-    opacity: 1,
-  },
-};
-
-const childVariants = {
+const variants = {
   initial: {
     opacity: 0,
   },
@@ -38,19 +29,19 @@ const Footer = () => {
     <footer id="footer" className="bg-white py-12 lg:pt-28">
       <Container>
         <motion.div
-          variants={parentVariants}
+          variants={variants}
           transition={transition}
           viewport={viewport}
           initial="initial"
           whileInView="animate"
           className="flex flex-col items-center justify-center gap-4"
         >
-          <motion.div variants={childVariants} transition={transition}>
+          <motion.div variants={variants} transition={transition}>
             <SocialLinks />
           </motion.div>
           <hr className="bg-white" />
           <motion.p
-            variants={childVariants}
+            variants={variants}
             transition={transition}
             className="font-manrope text-xs font-thin text-black"
           >

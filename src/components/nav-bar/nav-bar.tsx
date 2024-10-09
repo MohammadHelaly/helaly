@@ -17,15 +17,7 @@ const navVariants = {
   },
 };
 
-const navParentVariants = {
-  initial: {
-    opacity: 0,
-    y: -40,
-  },
-  animate: { opacity: 1, y: 0 },
-};
-
-const navChildVariants = {
+const contentVariants = {
   initial: {
     opacity: 0,
     y: -40,
@@ -75,17 +67,17 @@ const NavBar = () => {
       >
         <Container>
           <motion.div
-            variants={navParentVariants}
+            variants={contentVariants}
             transition={transition}
             viewport={viewport}
             initial="initial"
             whileInView="animate"
             className="flex w-full items-center justify-between gap-2"
           >
-            <motion.span variants={navChildVariants} transition={transition}>
+            <motion.span variants={contentVariants} transition={transition}>
               <NavLogo />
             </motion.span>
-            <motion.nav variants={navChildVariants} transition={transition}>
+            <motion.nav variants={contentVariants} transition={transition}>
               <ul className="hidden lg:flex">
                 <NavLinks />
               </ul>
