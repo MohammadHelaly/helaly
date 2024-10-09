@@ -12,7 +12,7 @@ import {
   Html,
   Java,
   JavaScript,
-  MongoDb,
+  MongoDbBlack as MongoDb,
   MySql,
   NextJs,
   NodeJs,

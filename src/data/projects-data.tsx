@@ -3,7 +3,7 @@ import {
   Python,
   Flask,
   UnrealEngine,
-  MongoDb,
+  MongoDbWhite as MongoDb,
   NodeJs,
   ExpressJs,
   SocketIo,
@@ -25,19 +25,19 @@ const projectsData = [
     ],
     stack: [
       {
-        icon: <MongoDb className="h-full w-full" />,
+        icon: <MongoDb className="h-full w-full fill-white" />,
       },
       {
-        icon: <ExpressJs className="h-full w-full" />,
+        icon: <ExpressJs className="h-full w-full fill-white" />,
       },
       {
-        icon: <ReactJs className="h-full w-full" />,
+        icon: <ReactJs className="h-full w-full fill-white" />,
       },
       {
-        icon: <NodeJs className="h-full w-full" />,
+        icon: <NodeJs className="h-full w-full fill-white" />,
       },
       {
-        icon: <SocketIo className="h-full w-full" />,
+        icon: <SocketIo className="h-full w-full fill-white" />,
       },
     ],
   },
@@ -55,7 +55,7 @@ const projectsData = [
     ],
     stack: [
       {
-        icon: <ReactJs className="h-full w-full" />,
+        icon: <ReactJs className="h-full w-full fill-white" />,
       },
     ],
   },
@@ -74,13 +74,13 @@ const projectsData = [
     ],
     stack: [
       {
-        icon: <ReactJs className="h-full w-full" />,
+        icon: <ReactJs className="h-full w-full fill-white" />,
       },
       {
-        icon: <Python className="h-full w-full" />,
+        icon: <Python className="h-full w-full fill-white" />,
       },
       {
-        icon: <Flask className="h-full w-full" />,
+        icon: <Flask className="h-full w-full fill-white" />,
       },
     ],
   },
@@ -99,10 +99,10 @@ const projectsData = [
     ],
     stack: [
       {
-        icon: <ReactJs className="h-full w-full" />,
+        icon: <ReactJs className="h-full w-full fill-white" />,
       },
       {
-        icon: <UnrealEngine className="h-full w-full" />,
+        icon: <UnrealEngine className="h-full w-full fill-white" />,
       },
     ],
   },
@@ -117,16 +117,16 @@ const projectsData = [
   // 	],
   // 	stack: [
   // 		{
-  // 			icon: <Html className="w-full h-full" />,
+  // 			icon: <Html className="w-full h-full fill-white" />,
   // 		},
   // 		{
-  // 			icon: <Css className="w-full h-full" />,
+  // 			icon: <Css className="w-full h-full fill-white" />,
   // 		},
   // 		{
-  // 			icon: <Php className="w-full h-full" />,
+  // 			icon: <Php className="w-full h-full fill-white" />,
   // 		},
   // 		{
-  // 			icon: <MySql className="w-full h-full" />,
+  // 			icon: <MySql className="w-full h-full fill-white" />,
   // 		},
   // 	],
   // },
@@ -140,16 +140,16 @@ const projectsData = [
   // 	],
   // 	stack: [
   // 		{
-  // 			icon: <Html className="w-full h-full" />,
+  // 			icon: <Html className="w-full h-full fill-white" />,
   // 		},
   // 		{
-  // 			icon: <Css className="w-full h-full" />,
+  // 			icon: <Css className="w-full h-full fill-white" />,
   // 		},
   // 		{
-  // 			icon: <Php className="w-full h-full" />,
+  // 			icon: <Php className="w-full h-full fill-white" />,
   // 		},
   // 		{
-  // 			icon: <MySql className="w-full h-full" />,
+  // 			icon: <MySql className="w-full h-full fill-white" />,
   // 		},
   // 	],
   // },
@@ -164,10 +164,10 @@ const projectsData = [
   // 	],
   // 	stack: [
   // 		{
-  // 			icon: <Java className="w-full h-full" />,
+  // 			icon: <Java className="w-full h-full fill-white" />,
   // 		},
   // 		{
-  // 			icon: <MySql className="w-full h-full" />,
+  // 			icon: <MySql className="w-full h-full fill-white" />,
   // 		},
   // 	],
   // },
@@ -181,7 +181,7 @@ const projectsData = [
   // 	],
   // 	stack: [
   // 		{
-  // 			icon: <Java className="w-full h-full" />,
+  // 			icon: <Java className="w-full h-full fill-white" />,
   // 		},
   // 	],
   // },

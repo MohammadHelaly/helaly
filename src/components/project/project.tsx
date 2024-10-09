@@ -150,7 +150,7 @@ const Project = (props: Props) => {
             >
               {stack.map((technology, index) => {
                 return (
-                  <div key={index} className="size-12 *:invert">
+                  <div key={index} className="size-12">
                     {technology.icon}
                   </div>
                 );

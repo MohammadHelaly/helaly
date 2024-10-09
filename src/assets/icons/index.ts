@@ -23,7 +23,8 @@ import Php from "./php-monocolor.svg";
 import Html from "./html-monocolor.svg";
 import Css from "./css-monocolor.svg";
 import UnrealEngine from "./unrealengine-monocolor.svg";
-import MongoDb from "./mongodb-monocolor.svg";
+import MongoDbBlack from "./mongodb-black.svg";
+import MongoDbWhite from "./mongodb-white.svg";
 import NodeJs from "./nodejs-monocolor.svg";
 import ExpressJs from "./expressjs-monocolor.svg";
 import SocketIo from "./socketio.svg";
@@ -56,7 +57,8 @@ export {
   Html,
   Css,
   UnrealEngine,
-  MongoDb,
+  MongoDbBlack,
+  MongoDbWhite,
   NodeJs,
   ExpressJs,
   SocketIo,
