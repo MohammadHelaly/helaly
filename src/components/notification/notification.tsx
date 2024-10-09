@@ -9,7 +9,7 @@ interface Props {
   variant: "success" | "error";
 }
 
-const contentVariants = {
+const variants = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0 },
 };
@@ -44,7 +44,7 @@ const Notification = (props: Props) => {
           <Dialog.Portal forceMount>
             <Dialog.Content asChild forceMount>
               <motion.div
-                variants={contentVariants}
+                variants={variants}
                 transition={transition}
                 initial="hidden"
                 animate="visible"
