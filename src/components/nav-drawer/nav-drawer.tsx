@@ -59,7 +59,7 @@ const NavDrawer = (props: Props) => {
                   <NavLogo />
                   <Dialog.Close asChild>
                     <motion.button
-                      className="size-8 items-center justify-center border-none bg-transparent p-0 focus:outline-none"
+                      className="size-8 items-center justify-center border-none bg-transparent p-0"
                       type="button"
                       aria-label="Close navigation"
                     >

@@ -82,7 +82,7 @@ const NavBar = () => {
                 <NavLinks />
               </ul>
               <button
-                className="flex size-8 items-center justify-center border-none bg-transparent p-0 focus:outline-none lg:hidden"
+                className="flex size-8 items-center justify-center border-none bg-transparent p-0 lg:hidden"
                 type="button"
                 aria-label="Toggle navigation"
                 onClick={openDrawer}

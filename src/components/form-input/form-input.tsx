@@ -56,9 +56,9 @@ const FormInput = forwardRef<HTMLInputElement | HTMLTextAreaElement, Props>(
 
     let labelClasses = "absolute top-0 text-sm font-manrope";
     let textAreaClasses =
-      "w-full pt-5 rounded-none border-t-none border-x-none border-b-2 border-black focus:outline-none focus:ring-0 !bg-white font-manrope text-sm text-black placeholder:font-manrope placeholder:text-sm placeholder:text-muted";
+      "w-full pt-5 rounded-none border-t-none border-x-none border-b-2 border-black !bg-white font-manrope text-sm text-black placeholder:font-manrope placeholder:text-sm placeholder:text-muted";
     let inputClasses =
-      "w-full pt-5 pb-3 rounded-none border-t-none border-x-none border-b-2 border-black focus:outline-none focus:ring-0 !bg-white font-manrope text-sm text-black placeholder:font-manrope placeholder:text-sm placeholder:text-muted";
+      "w-full pt-5 pb-3 rounded-none border-t-none border-x-none border-b-2 border-black !bg-white font-manrope text-sm text-black placeholder:font-manrope placeholder:text-sm placeholder:text-muted";
 
     if (error) {
       labelClasses += " !text-red";
