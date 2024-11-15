@@ -5,7 +5,7 @@ const timelineData = [
     dates: "July 2024 - Present",
     description: [
       "Developed frontend-heavy, animation-rich marketing websites using React.js and Next.js.",
-      "Integrated APIs and external services, such as AWS, to implement features and enhance functionality.",
+      "Integrated APIs and external services to implement features and enhance functionality.",
       "Employed software development best practices, ensuring code quality, scalability and maintainability.",
       "Contributed to all stages of the development lifecycle for several projects, from design to deployment.",
       "Conducted and coordinated code reviews, testing, CI/CD and other facets of software development.",
