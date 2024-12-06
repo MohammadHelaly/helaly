@@ -5,7 +5,8 @@ const timelineData = [
     dates: "July 2024 - Present",
     description: [
       "Developed frontend-heavy, animation-rich marketing websites using React.js and Next.js.",
-      "Integrated APIs and external services to implement features and enhance functionality.",
+      "Worked on serverless back-ends and database management for several company projects.",
+      "Built software tools and plugins with Python, adhering closely to design patterns and SOLID principles.",
       "Employed software development best practices, ensuring code quality, scalability and maintainability.",
       "Contributed to all stages of the development lifecycle for several projects, from design to deployment.",
       "Conducted and coordinated code reviews, testing, CI/CD and other facets of software development.",
