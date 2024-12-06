@@ -52,7 +52,7 @@ const timelineData = [
     position: "IGCSE",
     place: "AIS - Alexandria International School",
     dates: "Graduated in June 2019",
-    description: ["Completed a total of 12 subjects, achieving all A*'s."],
+    description: ["Graduated with a total of 12 subjects, achieving all A*'s."],
   },
 ];
 
