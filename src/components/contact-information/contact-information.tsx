@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Gmail, Phone } from "@/assets/icons";
+import { Email, Phone } from "@/assets/icons";
 import Icon from "@/components/icon";
 
 const variants = {
@@ -71,12 +71,12 @@ const ContactInformation = () => {
         whileInView="animate"
         className="flex items-center gap-2"
       >
-        <Icon link="mailto:mohammad.helaly@gmail.com">
-          <Gmail className="fill-black" height="38px" width="34px" />
+        <Icon link="mailto:mohammad.helaly@outlook.com">
+          <Email height="38px" width="34px" className="fill-black" />
         </Icon>
         <p className="font-manrope text-black">
-          <a href="mailto:mohammad.helaly@gmail.com">
-            mohammad.helaly@gmail.com
+          <a href="mailto:mohammad.helaly@outlook.com">
+            mohammad.helaly@outlook.com
           </a>
         </p>
       </motion.div>

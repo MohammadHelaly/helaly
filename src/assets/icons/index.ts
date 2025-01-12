@@ -1,6 +1,6 @@
 import HackerRank from "./hackerrank.svg";
 import GitHub from "./github.svg";
-import Gmail from "./gmail.svg";
+import Email from "./email.svg";
 import LinkedIn from "./linkedin.svg";
 import WebDevelopment from "./web-development.svg";
 import MobileDevelopment from "./mobile-development.svg";
@@ -40,7 +40,7 @@ import ChevronRight from "./chevron-right.svg";
 export {
   HackerRank,
   GitHub,
-  Gmail,
+  Email,
   LinkedIn,
   WebDevelopment,
   MobileDevelopment,

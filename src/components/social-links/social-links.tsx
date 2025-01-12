@@ -1,4 +1,4 @@
-import { HackerRank, GitHub, Gmail, LinkedIn } from "@/assets/icons";
+import { HackerRank, GitHub, Email, LinkedIn } from "@/assets/icons";
 import Icon from "@/components/icon";
 
 interface Props {
@@ -12,8 +12,8 @@ const SocialLinks = (props: Props) => {
 
   return (
     <div className="flex flex-row items-center justify-center gap-2 lg:gap-5">
-      <Icon link="mailto:mohammad.helaly@gmail.com">
-        <Gmail
+      <Icon link="mailto:mohammad.helaly@outlook.com">
+        <Email
           height="38px"
           width="34px"
           className={`rounded-sm fill-${fillColor}`}
