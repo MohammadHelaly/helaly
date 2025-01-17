@@ -15,9 +15,9 @@ const projectsData = [
     siteLink: "https://learnly-beta.vercel.app",
     githubLink: "https://github.com/MohammadHelaly/learnly",
     images: [
-      "/assets/images/learn1.jpg",
-      "/assets/images/learn2.jpg",
-      "/assets/images/learn3.jpg",
+      "/assets/images/learnly-1.jpg",
+      "/assets/images/learnly-2.jpg",
+      "/assets/images/learnly-3.jpg",
     ],
     description: [
       "An online learning platform for students and instructors to enroll in and create courses, developed using React.js, Node.js, Express.js, MongoDB and Socket.io.",
@@ -45,9 +45,9 @@ const projectsData = [
     title: "Helprr",
     githubLink: "https://github.com/MohammadHelaly/helprr",
     images: [
-      "/assets/images/help1.jpg",
-      "/assets/images/help2.jpg",
-      "/assets/images/help3.jpg",
+      "/assets/images/helprr-1.jpg",
+      "/assets/images/helprr-2.jpg",
+      "/assets/images/helprr-3.jpg",
     ],
     description: [
       "A mobile app designed to support blind and deaf people.",
@@ -64,9 +64,9 @@ const projectsData = [
     siteLink: "https://neural-visions.vercel.app",
     githubLink: "https://github.com/MohammadHelaly/neural-visions",
     images: [
-      "/assets/images/neural1.jpg",
-      "/assets/images/neural2.jpg",
-      "/assets/images/neural3.jpg",
+      "/assets/images/neural-visions-1.jpg",
+      "/assets/images/neural-visions-2.jpg",
+      "/assets/images/neural-visions-3.jpg",
     ],
     description: [
       "A web app for answering open-ended questions about images, reaching 68% accuracy and 80% answerability.",
@@ -89,9 +89,9 @@ const projectsData = [
     siteLink: "https://lunar-trek.vercel.app",
     githubLink: "https://github.com/MohammadHelaly/lunar-trek",
     images: [
-      "/assets/images/moon1.jpg",
-      "/assets/images/moon2.jpg",
-      "/assets/images/moon3.jpg",
+      "/assets/images/lunar-trek-1.jpg",
+      "/assets/images/lunar-trek-2.jpg",
+      "/assets/images/lunar-trek-3.jpg",
     ],
     description: [
       "A web app for visualizing lunar seismic events on a 3D model of the moon, sourced from NASA's Apollo Seismic Event Catalogue.",
@@ -106,85 +106,6 @@ const projectsData = [
       },
     ],
   },
-  // {
-  // 	title: "MedicoPortal",
-  // 	githubLink:
-  // 		"https://github.com/MohammadHelaly/Medical-Record-Management-System",
-  // 	images: ["/assets/images/medical1.jpg", "/assets/images/medical2.jpg", "/assets/images/medical3.jpg"],
-  // 	description: [
-  // 		"A medical website with portals for patients, doctors and administrators to manage appointments, prescriptions and medical records.",
-  // 		// "Built using HTML/CSS for website frontend as well as PHP and MySQL for backend programming.",
-  // 	],
-  // 	stack: [
-  // 		{
-  // 			icon: <Html className="w-full h-full fill-white" />,
-  // 		},
-  // 		{
-  // 			icon: <Css className="w-full h-full fill-white" />,
-  // 		},
-  // 		{
-  // 			icon: <Php className="w-full h-full fill-white" />,
-  // 		},
-  // 		{
-  // 			icon: <MySql className="w-full h-full fill-white" />,
-  // 		},
-  // 	],
-  // },
-  // {
-  // 	title: "DriveIt.io",
-  // 	githubLink: "https://github.com/MohammadHelaly/Car-Rental-System",
-  // 	images: ["/assets/images/car1.jpg", "/assets/images/car2.jpg", "/assets/images/car3.jpg"],
-  // 	description: [
-  // 		"A car rental website with portals for both customers and staff to manage reservations as well as view reports about operations.",
-  // 		// "Built using HTML/CSS for website frontend as well as PHP and MySQL for backend programming.",
-  // 	],
-  // 	stack: [
-  // 		{
-  // 			icon: <Html className="w-full h-full fill-white" />,
-  // 		},
-  // 		{
-  // 			icon: <Css className="w-full h-full fill-white" />,
-  // 		},
-  // 		{
-  // 			icon: <Php className="w-full h-full fill-white" />,
-  // 		},
-  // 		{
-  // 			icon: <MySql className="w-full h-full fill-white" />,
-  // 		},
-  // 	],
-  // },
-  // {
-  // 	title: "Libraria",
-  // 	githubLink:
-  // 		"https://github.com/MohammadHelaly/Library-Management-System",
-  // 	images: ["/assets/images/library1.jpg", "/assets/images/library2.jpg", "/assets/images/library3.jpg"],
-  // 	description: [
-  // 		"A staff-side library management application for administrators and librarians to manage inventory, checkouts, payments, reservations, and other operations.",
-  // 		// "Client-side library website for customers to reserve checkouts from a library online.",
-  // 	],
-  // 	stack: [
-  // 		{
-  // 			icon: <Java className="w-full h-full fill-white" />,
-  // 		},
-  // 		{
-  // 			icon: <MySql className="w-full h-full fill-white" />,
-  // 		},
-  // 	],
-  // },
-  // {
-  // 	title: "PaintFlow.studio",
-  // 	githubLink: "https://github.com/MohammadHelaly/Paint-Application",
-  // 	images: ["/assets/images/paint1.jpg", "/assets/images/paint2.jpg", "/assets/images/paint3.jpg"],
-  // 	description: [
-  // 		"A feature-rich paint application for users to use different strokes, colors, and tools to draw and manipulate different shapes, as well as save their paintings.",
-  // 		// "Developed according to SOLID principles using several design patterns in Java.",
-  // 	],
-  // 	stack: [
-  // 		{
-  // 			icon: <Java className="w-full h-full fill-white" />,
-  // 		},
-  // 	],
-  // },
 ];
 
 export { projectsData };

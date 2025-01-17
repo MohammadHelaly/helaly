@@ -84,7 +84,7 @@ const Project = (props: Props) => {
   }, [pauseAutoPlay]);
 
   const slides = images.map((image) => (
-    <img src={image} alt={title} className="h-full w-full object-contain" />
+    <img src={image} alt={title} className="h-full w-full object-cover" />
   ));
 
   return (

@@ -97,7 +97,10 @@ const Carousel = (props: Props) => {
   }, [current, autoPlay, autoPlayInterval, nextSlide]);
 
   return (
-    <div aria-label="Image carousel" className="relative aspect-[20/9] w-full">
+    <div
+      aria-label="Image carousel"
+      className="relative aspect-video w-full lg:aspect-[20/9] 2xl:aspect-video"
+    >
       <div className="relative mx-auto h-full w-full overflow-hidden">
         <AnimatePresence initial={false} custom={direction} mode="sync">
           <motion.div
