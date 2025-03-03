@@ -129,7 +129,7 @@ const Project = (props: Props) => {
                 )}{" "}
                 |
               </h3>
-              <Icon link={githubLink}>
+              <Icon link={githubLink} name="GitHub">
                 <GitHub className="size-8 fill-white" />
               </Icon>
             </motion.div>
@@ -187,7 +187,7 @@ const Project = (props: Props) => {
             )}{" "}
             |
           </h3>
-          <Icon link={githubLink}>
+          <Icon link={githubLink} name="GitHub">
             <GitHub className="size-6 fill-black" />
           </Icon>
         </motion.div>
