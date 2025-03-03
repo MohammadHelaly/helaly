@@ -56,7 +56,7 @@ const ContactInformation = () => {
         whileInView="animate"
         className="flex items-center gap-2"
       >
-        <Icon link="tel:+201095536781">
+        <Icon link="tel:+201095536781" name="Phone">
           <Phone className="size-8 fill-black" />
         </Icon>
         <p className="font-manrope text-black">
@@ -71,7 +71,7 @@ const ContactInformation = () => {
         whileInView="animate"
         className="flex items-center gap-2"
       >
-        <Icon link="mailto:mohammad.helaly@outlook.com">
+        <Icon link="mailto:mohammad.helaly@outlook.com" name="Email">
           <Email height="38px" width="34px" className="fill-black" />
         </Icon>
         <p className="font-manrope text-black">
