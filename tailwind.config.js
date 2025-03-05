@@ -17,6 +17,8 @@ export default {
         muted: "#212529bf",
         black: "#09090b",
         red: "#e94545",
+        orange: "#f46c21",
+        green: "#10a37f",
       },
     },
   },

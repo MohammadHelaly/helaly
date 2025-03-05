@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import FormInput from "@/components/form-input";
 import Notification from "@/components/notification";
 import { useSubmitContactForm } from "@/api/services/contact";
+import { useOnlineStatus } from "@/lib/hooks/web";
 
 const schema = z.object({
   name: z.string().min(1, { message: "Please enter your name." }),
@@ -40,7 +41,42 @@ const viewport = {
 };
 
 const ContactForm = () => {
-  const [dialogOpen, setDialogOpen] = useState(false);
+  const [notification, setNotification] = useState<{
+    open: boolean;
+    text: string;
+    variant: "info" | "success" | "warning" | "error";
+  }>({
+    open: false,
+    text: "",
+    variant: "info",
+  });
+
+  const { isOnline } = useOnlineStatus();
+
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const toggleNotification = (
+    variant: "info" | "success" | "error" | "warning",
+    text: string,
+  ) => {
+    setNotification({
+      open: true,
+      text,
+      variant,
+    });
+
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+
+    timeoutRef.current = setTimeout(() => {
+      setNotification({
+        open: false,
+        text: "",
+        variant: "info",
+      });
+
+      timeoutRef.current = null;
+    }, 5000);
+  };
 
   const {
     control,
@@ -57,28 +93,36 @@ const ContactForm = () => {
     resolver: zodResolver(schema),
   });
 
-  const { mutate, isError, isPending, isSuccess } = useSubmitContactForm({
-    onSettled: () => {
-      setDialogOpen(true);
-
-      setTimeout(() => {
-        setDialogOpen(false);
-      }, 5000);
-    },
+  const { mutate, isPending } = useSubmitContactForm({
+    onSuccess: () =>
+      toggleNotification(
+        "info",
+        "Thanks for reaching out! I'll get back to you as soon as possible.",
+      ),
+    onError: () =>
+      toggleNotification("error", "Something went wrong. Please try again."),
   });
 
   const formSubmitHandler = (data: schemaType) => {
+    if (!isOnline) {
+      toggleNotification(
+        "warning",
+        "You are offline. Please check your internet connection and try again.",
+      );
+      return;
+    }
+
     mutate(data);
     reset();
   };
 
+  useEffect(() => {
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, []);
+
   const buttonDisabled = isPending || Object.keys(errors).length > 0;
-  const notificationVariant = isSuccess ? "success" : "error";
-  const notificationText = isSuccess
-    ? "Thanks for reaching out! I'll get back to you as soon as possible."
-    : isError
-      ? "Something went wrong. Please try again."
-      : "";
 
   return (
     <div className="flex flex-col items-center justify-center gap-8 px-6 py-6 lg:items-start lg:px-20 lg:py-6 xl:px-24">
@@ -145,10 +189,10 @@ const ContactForm = () => {
         </motion.button>
       </form>
       <Notification
-        open={dialogOpen}
-        onOpenChange={setDialogOpen}
-        text={notificationText}
-        variant={notificationVariant}
+        open={notification.open}
+        onOpenChange={(open) => setNotification((prev) => ({ ...prev, open }))}
+        text={notification.text}
+        variant={notification.variant}
       />
     </div>
   );

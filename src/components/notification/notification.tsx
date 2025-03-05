@@ -6,7 +6,7 @@ interface Props {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   text: string;
-  variant: "success" | "error";
+  variant: "info" | "success" | "error" | "warning";
 }
 
 const variants = {
@@ -28,12 +28,21 @@ const Notification = (props: Props) => {
 
   switch (variant) {
     case "success":
-      contentClasses += " border-black";
-      textClasses += " text-black";
+      contentClasses += " border-green";
+      textClasses += " text-green";
       break;
     case "error":
       contentClasses += " border-red";
       textClasses += " text-red";
+      break;
+    case "warning":
+      contentClasses += " border-orange";
+      textClasses += " text-orange";
+      break;
+    case "info":
+    default:
+      contentClasses += " border-black";
+      textClasses += " text-black";
       break;
   }
 
