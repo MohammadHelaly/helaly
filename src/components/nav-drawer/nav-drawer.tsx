@@ -48,18 +48,16 @@ const NavDrawer = (props: Props) => {
               />
             </Dialog.Overlay>
             <Dialog.Content asChild forceMount>
-              <>
-                <VisuallyHidden>
-                  <Dialog.Title>Navigation Menu</Dialog.Title>
-                </VisuallyHidden>
-                <motion.div
-                  initial="hidden"
-                  animate="visible"
-                  exit="hidden"
-                  variants={drawerVariants}
-                  transition={transition}
-                  className="fixed right-0 top-0 z-50 h-full w-80 bg-white lg:hidden"
-                >
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                exit="hidden"
+                variants={drawerVariants}
+                transition={transition}
+                className="fixed right-0 top-0 z-50 h-full w-80 bg-white lg:hidden"
+              >
+                <Dialog.Title asChild>
+                  <VisuallyHidden>Navigation Menu</VisuallyHidden>
                   <div className="flex w-full items-center justify-between px-3 py-3">
                     <NavLogo />
                     <Dialog.Close asChild>
@@ -72,15 +70,15 @@ const NavDrawer = (props: Props) => {
                       </motion.button>
                     </Dialog.Close>
                   </div>
-                  <Dialog.Description asChild>
-                    <nav className="px-3 py-24">
-                      <ul>
-                        <NavLinks />
-                      </ul>
-                    </nav>
-                  </Dialog.Description>
-                </motion.div>
-              </>
+                </Dialog.Title>
+                <Dialog.Description asChild>
+                  <nav className="px-3 py-24">
+                    <ul>
+                      <NavLinks />
+                    </ul>
+                  </nav>
+                </Dialog.Description>
+              </motion.div>
             </Dialog.Content>
           </Dialog.Portal>
         )}
