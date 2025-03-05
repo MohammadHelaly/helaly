@@ -57,8 +57,8 @@ const NavDrawer = (props: Props) => {
                 className="fixed right-0 top-0 z-50 h-full w-80 bg-white lg:hidden"
               >
                 <Dialog.Title asChild>
-                  <VisuallyHidden>Navigation Menu</VisuallyHidden>
                   <div className="flex w-full items-center justify-between px-3 py-3">
+                    <VisuallyHidden>Navigation Menu</VisuallyHidden>
                     <NavLogo />
                     <Dialog.Close asChild>
                       <motion.button
