@@ -72,11 +72,13 @@ const NavDrawer = (props: Props) => {
                       </motion.button>
                     </Dialog.Close>
                   </div>
-                  <nav className="px-3 py-24">
-                    <ul>
-                      <NavLinks />
-                    </ul>
-                  </nav>
+                  <Dialog.Description asChild>
+                    <nav className="px-3 py-24">
+                      <ul>
+                        <NavLinks />
+                      </ul>
+                    </nav>
+                  </Dialog.Description>
                 </motion.div>
               </>
             </Dialog.Content>
