@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import * as Dialog from "@radix-ui/react-dialog";
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import NavLogo from "@/components/nav-logo";
 import NavLinks from "@/components/nav-links";
 import { CloseMenu } from "@/assets/icons";
@@ -47,32 +48,37 @@ const NavDrawer = (props: Props) => {
               />
             </Dialog.Overlay>
             <Dialog.Content asChild forceMount>
-              <motion.div
-                initial="hidden"
-                animate="visible"
-                exit="hidden"
-                variants={drawerVariants}
-                transition={transition}
-                className="fixed right-0 top-0 z-50 h-full w-80 bg-white lg:hidden"
-              >
-                <div className="flex w-full items-center justify-between px-3 py-3">
-                  <NavLogo />
-                  <Dialog.Close asChild>
-                    <motion.button
-                      className="size-8 items-center justify-center border-none bg-transparent p-0"
-                      type="button"
-                      aria-label="Close navigation"
-                    >
-                      <CloseMenu className="h-full w-full fill-black" />
-                    </motion.button>
-                  </Dialog.Close>
-                </div>
-                <nav className="px-3 py-24">
-                  <ul>
-                    <NavLinks />
-                  </ul>
-                </nav>
-              </motion.div>
+              <>
+                <VisuallyHidden>
+                  <Dialog.Title>Navigation Menu</Dialog.Title>
+                </VisuallyHidden>
+                <motion.div
+                  initial="hidden"
+                  animate="visible"
+                  exit="hidden"
+                  variants={drawerVariants}
+                  transition={transition}
+                  className="fixed right-0 top-0 z-50 h-full w-80 bg-white lg:hidden"
+                >
+                  <div className="flex w-full items-center justify-between px-3 py-3">
+                    <NavLogo />
+                    <Dialog.Close asChild>
+                      <motion.button
+                        className="size-8 items-center justify-center border-none bg-transparent p-0"
+                        type="button"
+                        aria-label="Close navigation"
+                      >
+                        <CloseMenu className="h-full w-full fill-black" />
+                      </motion.button>
+                    </Dialog.Close>
+                  </div>
+                  <nav className="px-3 py-24">
+                    <ul>
+                      <NavLinks />
+                    </ul>
+                  </nav>
+                </motion.div>
+              </>
             </Dialog.Content>
           </Dialog.Portal>
         )}

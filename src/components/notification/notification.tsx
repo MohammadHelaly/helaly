@@ -73,9 +73,11 @@ const Notification = (props: Props) => {
                     </Dialog.Close>
                   </div>
                 </Dialog.Title>
-                <div className="p-6 pt-0">
-                  <p className={textClasses}>{text}</p>
-                </div>
+                <Dialog.Description asChild>
+                  <div className="p-6 pt-0">
+                    <p className={textClasses}>{text}</p>
+                  </div>
+                </Dialog.Description>
               </motion.div>
             </Dialog.Content>
           </Dialog.Portal>
