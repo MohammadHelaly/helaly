@@ -56,10 +56,11 @@ const ContactInformation = () => {
         whileInView="animate"
         className="flex items-center gap-2"
       >
-        <Icon link="tel:+201095536781" name="Phone">
+        <Icon name="Phone">
           <Phone className="size-8 fill-black" />
         </Icon>
         <p className="font-manrope text-black">
+          <a href="tel:+4916095893613">+49 160 95893613</a> /{" "}
           <a href="tel:+201095536781">+20 109 553 6781</a>
         </p>
       </motion.div>
