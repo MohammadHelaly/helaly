@@ -1,5 +1,14 @@
 const timelineData = [
   {
+    position: "M.Sc. in Computer Science",
+    place: "Universität Passau",
+    dates: "April 2025 - Present",
+    description: [
+      "Pursuing a master's degree in computer science as an international student.",
+      "Focusing mainly on software engineering, with interests in data science and machine learning.",
+    ],
+  },
+  {
     position: "Software Engineer",
     place: "VAES.ai",
     dates: "July 2024 - Present",
