@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Container from "@/components/container";
-import SocialLinks from "@/components/social-links";
+import Links from "@/components/links";
 
 const variants = {
   initial: {
@@ -63,7 +63,7 @@ const HomeSection = () => {
               transition={transition}
               className="py-4"
             >
-              <SocialLinks variant="dark" />
+              <Links variant="dark" />
             </motion.div>
           </motion.div>
         </div>

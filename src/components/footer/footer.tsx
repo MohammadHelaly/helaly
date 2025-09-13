@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Container from "@/components/container";
-import SocialLinks from "@/components/social-links";
+import Links from "@/components/links";
 
 const variants = {
   initial: {
@@ -37,7 +37,7 @@ const Footer = () => {
           className="flex flex-col items-center justify-center gap-4"
         >
           <motion.div variants={variants} transition={transition}>
-            <SocialLinks />
+            <Links />
           </motion.div>
           <hr className="bg-white" />
           <motion.p

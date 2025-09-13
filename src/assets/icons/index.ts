@@ -36,6 +36,8 @@ import Sst from "./sst-monocolor.svg";
 import HamburgerMenu from "./hamburger-menu-black.svg";
 import CloseMenu from "./close-menu-black.svg";
 import ChevronRight from "./chevron-right.svg";
+import DownloadFile from "./download-file.svg";
+import Download from "./download.svg";
 
 export {
   HackerRank,
@@ -76,4 +78,6 @@ export {
   HamburgerMenu,
   CloseMenu,
   ChevronRight,
+  DownloadFile,
+  Download,
 };

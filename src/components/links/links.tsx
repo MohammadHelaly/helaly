@@ -1,11 +1,11 @@
-import { HackerRank, GitHub, Email, LinkedIn } from "@/assets/icons";
+import { GitHub, Email, LinkedIn, Download } from "@/assets/icons";
 import Icon from "@/components/icon";
 
 interface Props {
   variant?: "light" | "dark";
 }
 
-const SocialLinks = (props: Props) => {
+const Links = (props: Props) => {
   const { variant = "dark" } = props;
 
   const fillColor = variant === "light" ? "white" : "black";
@@ -25,11 +25,15 @@ const SocialLinks = (props: Props) => {
       <Icon link="https://www.linkedin.com/in/mohammadhelaly" name="LinkedIn">
         <LinkedIn className={`size-8 rounded-sm fill-${fillColor}`} />
       </Icon>
-      <Icon link="https://www.hackerrank.com/mohammad_helaly" name="HackerRank">
-        <HackerRank className={`size-8 rounded-sm fill-${fillColor}`} />
+      <Icon
+        link="/assets/files/Mohammad Helaly CV.pdf"
+        name="Download CV"
+        download
+      >
+        <Download className={`size-8 rounded-sm fill-${fillColor}`} />
       </Icon>
     </div>
   );
 };
 
-export default SocialLinks;
+export default Links;
