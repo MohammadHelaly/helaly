@@ -1,5 +1,18 @@
 const timelineData = [
   {
+    position: "Full-Stack Developer",
+    place: "TWENTY Studio",
+    dates: "November 2025 - Present",
+    description: [
+      "Developed and maintained full-stack web applications using SvelteKit and Payload CMS.",
+      "Created and contributed to full-stack projects, integrating front-end and back-end technologies.",
+      "Delivered features and milestones on schedule, turning requirements into high-quality implementations.",
+      "Employed software development best practices, ensuring code quality, scalability and maintainability.",
+      "Contributed to all stages of the development lifecycle for several projects, from design to deployment.",
+      "Conducted and coordinated code reviews, testing, CI/CD and other facets of software development.",
+    ],
+  },
+  {
     position: "M.Sc. in Computer Science",
     place: "Universität Passau",
     dates: "April 2025 - Present",
@@ -11,14 +24,11 @@ const timelineData = [
   {
     position: "Software Engineer",
     place: "VAES.ai",
-    dates: "July 2024 - Present",
+    dates: "July 2024 - October 2025",
     description: [
       "Developed frontend-heavy, animation-rich marketing websites using React.js and Next.js.",
       "Worked on serverless back-ends and database management for several company projects.",
       "Built software tools and plugins with Python, adhering closely to design patterns and SOLID principles.",
-      "Employed software development best practices, ensuring code quality, scalability and maintainability.",
-      "Contributed to all stages of the development lifecycle for several projects, from design to deployment.",
-      "Conducted and coordinated code reviews, testing, CI/CD and other facets of software development.",
     ],
   },
   {

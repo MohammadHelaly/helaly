@@ -1,10 +1,9 @@
 import {
   Aws,
   Cpp,
-  Css,
   Dataiku,
+  Docker,
   ExpressJs,
-  GoLang,
   Html,
   Java,
   JavaScript,
@@ -15,8 +14,9 @@ import {
   Php,
   Python,
   ReactJs,
-  SocketIo,
   Sst,
+  SvelteJs,
+  PayloadCms,
 } from "@/assets/icons";
 
 const skillsData = [
@@ -38,17 +38,13 @@ const skillsData = [
     icon: <Html className="h-full w-full fill-black" />,
   },
   {
-    name: "CSS",
-    icon: <Css className="h-full w-full fill-black" />,
+    name: "PHP",
+    icon: <Php className="h-full w-full scale-125 fill-black" />,
+    className: "php-icon",
   },
   {
     name: "JavaScript",
     icon: <JavaScript className="h-full w-full fill-black" />,
-  },
-  {
-    name: "PHP",
-    icon: <Php className="h-full w-full scale-125 fill-black" />,
-    className: "php-icon",
   },
   {
     name: "MySQL",
@@ -60,16 +56,20 @@ const skillsData = [
     icon: <MongoDb className="h-full w-full fill-black" />,
   },
   {
-    name: "Socket.io",
-    icon: <SocketIo className="h-full w-full fill-black" />,
+    name: "Docker",
+    icon: <Docker className="h-full w-full fill-black" />,
   },
   {
     name: "AWS",
     icon: <Aws className="h-full w-full fill-black" />,
   },
   {
-    name: "GoLang",
-    icon: <GoLang className="h-full w-full fill-black" />,
+    name: "PayloadCMS",
+    icon: <PayloadCms className="h-full w-full fill-black" />,
+  },
+  {
+    name: "Svelte.js",
+    icon: <SvelteJs className="h-full w-full fill-black" />,
   },
   {
     name: "SST",
