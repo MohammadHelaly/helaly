@@ -11,7 +11,7 @@ import {
   MySql,
   NextJs,
   NodeJs,
-  Php,
+  GraphQL,
   Python,
   ReactJs,
   Sst,
@@ -23,7 +23,6 @@ const skillsData = [
   {
     name: "C & C++",
     icon: <Cpp className="h-full w-full scale-125 fill-black" />,
-    className: "cpp-icon",
   },
   {
     name: "Python",
@@ -38,9 +37,8 @@ const skillsData = [
     icon: <Html className="h-full w-full fill-black" />,
   },
   {
-    name: "PHP",
-    icon: <Php className="h-full w-full scale-125 fill-black" />,
-    className: "php-icon",
+    name: "GraphQL",
+    icon: <GraphQL className="h-full w-full fill-black" />,
   },
   {
     name: "JavaScript",
@@ -49,7 +47,6 @@ const skillsData = [
   {
     name: "MySQL",
     icon: <MySql className="h-full w-full scale-125 fill-black" />,
-    className: "mysql-icon",
   },
   {
     name: "MongoDB",
@@ -84,7 +81,6 @@ const skillsData = [
     icon: (
       <NextJs className="h-full w-full scale-[1.75] fill-black lg:scale-[1.35]" />
     ),
-    className: "nextjs-icon",
   },
   {
     name: "Node.js",
@@ -93,12 +89,10 @@ const skillsData = [
   {
     name: "Express.js",
     icon: <ExpressJs className="h-full w-full fill-black" />,
-    className: "expressjs-icon",
   },
   {
     name: "Dataiku",
     icon: <Dataiku className="h-full w-full scale-[1.4] fill-black" />,
-    className: "dataiku-icon",
   },
 ];
 
