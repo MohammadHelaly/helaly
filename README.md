@@ -102,7 +102,7 @@ The Vercel project uses the standard Vite settings, and `VITE_CONTACT_FORM_ENDPO
 - The `@` import alias resolves to `src`, as configured in `vite.config.ts`.
 - SVG files in `src/assets/icons` can be imported as React components.
 - Styling is primarily utility-first through Tailwind, with global styles in `src/styles`.
-- Contact form validation happens on the client with Zod before React Query sends the mutation to Getform.
+- The external contact form is powered by Getform, with React Query sending submissions to the configured endpoint.
 - The production build outputs static assets to `dist`, and Vercel handles the hosted deployment automatically after pushes.
 
 ## License
