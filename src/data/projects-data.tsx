@@ -61,7 +61,7 @@ const projectsData = [
   },
   {
     title: "NeuralVisions",
-    siteLink: "https://neural-visions.vercel.app",
+    siteLink: "https://mohammadhelaly-neural-visions.hf.space",
     githubLink: "https://github.com/MohammadHelaly/neural-visions",
     images: [
       "/assets/images/neural-visions-1.jpg",
