@@ -13,7 +13,7 @@ const projectsData = [
   {
     title: "Learnly",
     siteLink: "https://learnly-beta.vercel.app",
-    githubLink: "https://github.com/MohammadHelaly/learnly",
+    githubLink: "https://github.com/mohammadhelaly/learnly",
     images: [
       "/assets/images/learnly-1.jpg",
       "/assets/images/learnly-2.jpg",
@@ -43,7 +43,7 @@ const projectsData = [
   },
   {
     title: "Helprr",
-    githubLink: "https://github.com/MohammadHelaly/helprr",
+    githubLink: "https://github.com/mohammadhelaly/helprr",
     images: [
       "/assets/images/helprr-1.jpg",
       "/assets/images/helprr-2.jpg",
@@ -62,7 +62,7 @@ const projectsData = [
   {
     title: "NeuralVisions",
     siteLink: "https://mohammadhelaly-neural-visions.hf.space",
-    githubLink: "https://github.com/MohammadHelaly/neural-visions",
+    githubLink: "https://github.com/mohammadhelaly/neural-visions",
     images: [
       "/assets/images/neural-visions-1.jpg",
       "/assets/images/neural-visions-2.jpg",
@@ -87,7 +87,7 @@ const projectsData = [
   {
     title: "Lunar Trek",
     siteLink: "https://lunar-trek.vercel.app",
-    githubLink: "https://github.com/MohammadHelaly/lunar-trek",
+    githubLink: "https://github.com/mohammadhelaly/lunar-trek",
     images: [
       "/assets/images/lunar-trek-1.jpg",
       "/assets/images/lunar-trek-2.jpg",

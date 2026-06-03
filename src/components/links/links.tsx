@@ -19,7 +19,7 @@ const Links = (props: Props) => {
           className={`rounded-sm fill-${fillColor}`}
         />
       </Icon>
-      <Icon link="https://github.com/MohammadHelaly" name="GitHub">
+      <Icon link="https://github.com/mohammadhelaly" name="GitHub">
         <GitHub className={`size-8 rounded-sm fill-${fillColor}`} />
       </Icon>
       <Icon link="https://www.linkedin.com/in/mohammadhelaly" name="LinkedIn">
